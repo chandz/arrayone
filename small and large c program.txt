@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int a[9]={9,8,10,2,3,8,11,4,5,7};
+    int n=9;
+    int k=0;int i;
+    int large=a[0];
+    int small=a[0];
+
+
+        for(i=1;i<n;i++)
+        {
+            if(small>a[i])
+            {
+                small=a[i];
+            }
+             if(large<a[i])
+            {
+                large=a[i];
+            }
+     
+        
+    }printf("small=%d large=%d",small,large);
+    return 0;
+}
